@@ -121,7 +121,7 @@ YUI().use('node', 'yql', 'datatable', 'event-valuechange', 'datatype-date-format
 			}
 
 			// Add seasons in correct order
-			for(i = 0, len = Seasons.length; i < len; ++i)
+			for(i = Seasons.length; i >= 0; --i)
 			{
 				var table = new Y.DataTable(
 				{
