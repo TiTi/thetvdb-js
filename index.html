@@ -1,49 +1,30 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>TV Show</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="thetvdb-js : Query thetvdb with YUI and YQL" />
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+		<div id="main">
+			<form>
+				<label for="tvshow">TV show: </label><input type="text" name="tvshow" id="tvshow" />
+			</form>
 
-    <title>thetvdb-js</title>
-  </head>
+			<div id="loading">...please wait...</div>
 
-  <body>
+			<div id="shows"></div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/TiTi/thetvdb-js">View on GitHub</a>
+			<div id="results"></div>
+		</div>
 
-          <h1 id="project_title">thetvdb-js</h1>
-          <h2 id="project_tagline">Query thetvdb with YUI and YQL</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/TiTi/thetvdb-js/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/TiTi/thetvdb-js/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>Demo page</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">thetvdb-js maintained by <a href="https://github.com/TiTi">TiTi</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+		<script src="http://yui.yahooapis.com/3.7.3/build/yui/yui-min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
